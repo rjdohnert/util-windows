@@ -10,4 +10,4 @@ lsusb - Lists all available USB devices on your system
 mem - Lists all memory statistics on your system including virtual memory
 su - Launches an admin console. su -cmd launches an admin cmd session
 uname - lists system information including architecture type and Windows NT version
-
+wget - retrieve files over the network via the command-line
