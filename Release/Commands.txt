@@ -9,5 +9,6 @@ get-pci - lists all PCI devices installed on your system
 get-usb - Lists all available USB devices on your system
 show-meminfo - Lists all memory statistics on your system including virtual memory
 get-admin - Launches an admin console. get-admin -cmd launches an admin cmd session
-get-systemver - lists system information including architecture type and Windows NT version
+get-systemver - lists system information including architecture type and Windows NT version 
+--help list all options
 wget - retrieve files over the network via the command-line
