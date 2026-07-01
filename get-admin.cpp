@@ -3,15 +3,18 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <cctype>
 
 // Automatically link Shell32.lib for ShellExecuteEx
 #pragma comment(lib, "Shell32.lib")
 
 void PrintUsage() {
-    std::cout << "Usage: su [option]\n";
+    std::cout << "Usage: get-admin [option]\n";
     std::cout << "Options:\n";
-    std::cout << "  (no option)   Launches Administrator Command Prompt (cmd.exe)\n";
-    std::cout << "  -ps           Launches Administrator PowerShell (powershell.exe)\n";
+    std::cout << "  (no option)   Launches Administrator Powershell (pwsh.exe)\n";
+    std::cout << "  -cmd          Launches Administrator Command Prompt (cmd.exe)\n";
+    std::cout << "  -ps           Launches Administrator Windows PowerShell (powershell.exe)\n";
+    std::cout << "  -pwsh         Launches Administrator PowerShell 7 (pwsh.exe)\n";
 }
 
 int main(int argc, char* argv[]) {
@@ -26,8 +29,12 @@ int main(int argc, char* argv[]) {
         if (arg == "-h" || arg == "--help") {
             PrintUsage();
             return 0;
-        } else if (arg == "-cmd" || arg == "powershell") {
+        } else if (arg == "-cmd" || arg == "cmd" || arg == "cmd.exe") {
             targetShell = "cmd.exe";
+        } else if (arg == "-ps" || arg == "powershell" || arg == "powershell.exe") {
+            targetShell = "powershell.exe";
+        } else if (arg == "-pwsh" || arg == "pwsh" || arg == "pwsh.exe") {
+            targetShell = "pwsh.exe";
         } else {
             std::cout << "Unknown option: " << argv[1] << "\n";
             PrintUsage();

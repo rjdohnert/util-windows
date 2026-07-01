@@ -1,4 +1,5 @@
 #include <iostream>
+#include <locale>
 #include <windows.h>
 #include <lm.h>
 

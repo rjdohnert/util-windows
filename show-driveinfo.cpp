@@ -4,6 +4,8 @@
 #include <iomanip>
 #include <string>
 #include <vector>
+#include <locale>
+#include <cwchar>
 
 // Helper structure to hold drive details
 struct DriveInfo {

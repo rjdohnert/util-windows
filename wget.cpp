@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdio>
 
 // Link the WinINet library automatically when using MSVC compiler
 #pragma comment(lib, "wininet.lib")

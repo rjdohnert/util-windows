@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 #include <cstdlib>
+#include <cctype>
 
 // Function declarations
 bool isLeapYear(int year);
@@ -38,7 +39,7 @@ int main() {
         std::cout << "\n Enter choice: ";
         std::cin >> choice;
 
-        switch (std::tolower(choice)) {
+        switch (std::tolower(static_cast<unsigned char>(choice))) {
             case 'n':
                 currentMonth++;
                 if (currentMonth > 12) {
