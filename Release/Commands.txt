@@ -1,13 +1,13 @@
 Commands
 --------
 
-Calendar - List the current date
-driveinfo - Lists all available drives, filesystem type, used and free space
-lsbt - Lists all available Bluetooth devices
-lscpu - Lists the processor installed on your system
-lspci - lists all PCI devices installed on your system
-lsusb - Lists all available USB devices on your system
-mem - Lists all memory statistics on your system including virtual memory
-su - Launches an admin console. su -cmd launches an admin cmd session
-uname - lists system information including architecture type and Windows NT version
+show-calendar - List the current date
+show-driveinfo - Lists all available drives, filesystem type, used and free space
+get-bluetooth - Lists all available Bluetooth devices
+get-cpuinfo - Lists the processor installed on your system
+get-pci - lists all PCI devices installed on your system
+get-usb - Lists all available USB devices on your system
+show-meminfo - Lists all memory statistics on your system including virtual memory
+get-admin - Launches an admin console. get-admin -cmd launches an admin cmd session
+get-systemver - lists system information including architecture type and Windows NT version
 wget - retrieve files over the network via the command-line
